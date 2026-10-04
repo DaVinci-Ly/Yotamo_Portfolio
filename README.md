@@ -5,8 +5,8 @@
 
 ## 🌐 Live Preview
 
-- **Arabic (RTL):** [yotamo.example.com](https://yotamo.example.com)
-- **English (LTR):** [yotamo.example.com/en](https://yotamo.example.com/en/)
+- **Arabic (RTL):** [yotamo.yosef.ly](https://yotamo.yosef.ly)
+- **English (LTR):** [yotamo.yosef.ly/en](https://yotamo.yosef.ly/en/)
 
 ## 📁 Project Structure
 

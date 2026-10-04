@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tools/
 
-Sitemap: https://yotamo.example.com/sitemap.xml
+Sitemap: https://yotamo.yosef.ly/sitemap.xml
