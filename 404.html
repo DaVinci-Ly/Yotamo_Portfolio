@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — الصفحة غير موجودة | آية عون</title>
+  <meta name="description" content="الصفحة التي تبحث عنها غير موجودة." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <meta name="theme-color" content="#ec4899" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-xl);
+    }
+
+    .error-page__content {
+      max-width: 500px;
+    }
+
+    .error-page__number {
+      font-size: 8rem;
+      font-weight: 800;
+      font-family: var(--ff-num);
+      background: var(--clr-accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: var(--space-md);
+    }
+
+    .error-page__title {
+      font-size: var(--fs-xl);
+      font-weight: var(--fw-bold);
+      color: var(--clr-text-primary);
+      margin-bottom: var(--space-sm);
+    }
+
+    .error-page__description {
+      font-size: var(--fs-md);
+      color: var(--clr-text-muted);
+      margin-bottom: var(--space-2xl);
+      line-height: 1.8;
+    }
+
+    .error-page__actions {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 480px) {
+      .error-page__number {
+        font-size: 5rem;
+      }
+
+      .error-page__actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+
+  <!-- Theme Sync Script -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('yotamo-theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-page__content">
+      <div class="error-page__number">404</div>
+      <h1 class="error-page__title">عذراً، الصفحة غير موجودة</h1>
+      <p class="error-page__description">
+        يبدو أن الصفحة التي تبحث عنها قد انتقلت أو لم تعد موجودة. دعني أساعدك في العودة.
+      </p>
+      <div class="error-page__actions">
+        <a href="/" class="btn btn--primary">
+          <i class="bx bx-home-alt"></i>
+          <span>العودة للرئيسية</span>
+        </a>
+        <a href="/en/" class="btn btn--secondary">
+          <i class="bx bx-globe"></i>
+          <span>English Version</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

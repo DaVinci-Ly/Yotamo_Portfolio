@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aya Aoun — Interior Designer | Content Creator</title>
+    <meta name="description" content="Aya Aoun — Interior designer and content creator. Crafting creative spaces and producing professional visual content." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yotamo.example.com/en/" />
+    <meta property="og:title" content="Aya Aoun — Interior Designer | Content Creator" />
+    <meta property="og:description" content="Interior designer and content creator. Crafting creative spaces and producing professional visual content." />
+    <meta property="og:image" content="https://yotamo.example.com/assets/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aya Aoun — Interior Designer | Content Creator" />
+    <meta name="twitter:description" content="Interior designer and content creator. Crafting creative spaces and producing professional visual content." />
+    <meta name="twitter:image" content="https://yotamo.example.com/assets/og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yotamo.example.com/en/" />
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Aya Aoun, interior designer, content creator, interior design, decor, creative spaces" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aya Aoun",
+        "url": "https://yotamo.example.com/en/",
+        "jobTitle": "Interior Designer | Content Creator",
+        "description": "Interior designer and content creator specializing in creative spaces and professional visual content.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "LY"
+        },
+        "email": "aya@example.com",
+        "sameAs": []
+      }
+    </script>
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#ec4899" />
+
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="../assets/images/yotamo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar" dir="rtl">
+      <div class="navbar__container container">
+        <a href="#home" class="navbar__logo" dir="ltr">
+          <span class="logo-bracket">&lt;/</span>Aya<span class="logo-dot">.</span>Aoun<span class="logo-bracket">&gt;</span>
+        </a>
+        <nav class="navbar__menu" id="navMenu" dir="ltr">
+          <ul class="navbar__list">
+            <li><a href="#home" class="navbar__link active-link" data-section="home"><i class="bx bx-home-alt"></i><span>Home</span></a></li>
+            <li><a href="#projects" class="navbar__link" data-section="projects"><i class="bx bx-briefcase"></i><span>Portfolio</span></a></li>
+            <li><a href="#skills" class="navbar__link" data-section="skills"><i class="bx bx-palette"></i><span>Skills</span></a></li>
+            <li><a href="#contact" class="navbar__link" data-section="contact"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
+          </ul>
+        </nav>
+        <div class="navbar__actions">
+          <a href="../" class="lang-toggle" aria-label="Switch to Arabic">AR</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+            <i class="bx bx-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar__toggle" id="navToggle" aria-label="Menu">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section" id="home">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <div class="hero__image-wrapper reveal">
+              <div class="hero__image-ring"></div>
+              <img src="../assets/images/yotamo.jpg" alt="Aya Aoun Profile Picture" class="hero__image" loading="lazy" decoding="async" width="266" height="400" />
+            </div>
+            <div class="hero__text reveal reveal-delay-1">
+              <span class="hero__greeting">Hello, I'm</span>
+              <h1 class="hero__name">Aya Aoun<i class="bx bxs-badge-check verified-badge"></i></h1>
+              <p class="hero__title">
+                <span class="hero__title-wrapper"><span class="hero__title-text" id="typingText"></span><span class="hero__cursor">|</span></span>
+              </p>
+            </div>
+            <div class="hero__socials reveal reveal-delay-2">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats section" id="stats">
+        <div class="stats__container container">
+
+          <div class="stats__metric reveal">
+            <div class="stats__figure">
+              <span class="stats__plus num-font">+</span>
+              <h3 class="stats__number num-font" data-target="30">0</h3>
+            </div>
+            <div class="stats__meta">
+              <span class="stats__label">Brand Partnerships</span>
+              <span class="stats__sub">Successful collaborations with brands</span>
+            </div>
+          </div>
+
+          <div class="stats__metric reveal reveal-delay-1">
+            <div class="stats__figure">
+              <span class="stats__plus num-font">+</span>
+              <h3 class="stats__number num-font" data-target="4">0</h3>
+            </div>
+            <div class="stats__meta">
+              <span class="stats__label">Years of Experience</span>
+              <span class="stats__sub">In interior design & content creation</span>
+            </div>
+          </div>
+
+          <div class="stats__metric reveal reveal-delay-2">
+            <div class="stats__figure">
+              <span class="stats__plus num-font">+</span>
+              <h3 class="stats__number num-font" data-target="120">0</h3>
+            </div>
+            <div class="stats__meta">
+              <span class="stats__label">K Followers</span>
+              <span class="stats__sub">Across social media platforms</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ACTIONS -->
+      <section class="actions section">
+        <div class="actions__container container reveal">
+          <a href="../assets/cv.pdf" download class="btn btn--primary"><i class="bx bx-cloud-download"></i>Download Resume</a>
+          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--whatsapp"><i class="bx bxl-whatsapp"></i>WhatsApp</a>
+          <a href="mailto:aya@example.com" class="btn btn--secondary btn--email"><i class="bx bx-envelope"></i>Email Me</a>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section" id="projects">
+        <div class="projects__container container">
+          <div class="section__header reveal">
+            <span class="section__subtitle">My Work</span>
+            <h2 class="section__title">Portfolio</h2>
+            <p class="section__description">
+              A curated collection of my best work in interior design and creative content production.
+            </p>
+          </div>
+          <div class="projects__tabs reveal">
+            <button type="button" class="projects__tab active" data-filter="all">All</button>
+            <button type="button" class="projects__tab" data-filter="interior">Interior Design</button>
+            <button type="button" class="projects__tab" data-filter="content">Content Creation</button>
+          </div>
+          <div class="projects__carousel-wrapper">
+            <button class="projects__nav projects__nav--prev" aria-label="Previous"><i class="bx bx-chevron-left"></i></button>
+            <button class="projects__nav projects__nav--next" aria-label="Next"><i class="bx bx-chevron-right"></i></button>
+            <div class="projects__grid">
+
+              <!-- Project 1 -->
+              <article class="project-card reveal" data-category="interior">
+                <div class="project-card__image-wrapper">
+                  <img src="../assets/images/The%20new%20house.jpg" alt="New Home Design" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>View Project</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">New Home — Full Interior Design</h3>
+                    <p class="project-card__description">A complete interior design project from scratch — from flooring and finishing to furniture selection and final styling.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="project-card reveal" data-category="interior">
+                <div class="project-card__image-wrapper">
+                  <img src="../assets/images/interior%20design.jpg" alt="Interior Design Collage" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>View Project</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">Interior Design Collage — Academic</h3>
+                    <p class="project-card__description">An academic project using collage technique to blend diverse interior elements into a cohesive visual composition reflecting spatial creativity.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3 -->
+              <article class="project-card reveal" data-category="content">
+                <div class="project-card__image-wrapper">
+                  <img src="../assets/images/micado.jpg" alt="Mikado Abayas Campaign" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>View Project</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">Mikado — Luxury Abayas Campaign</h3>
+                    <p class="project-card__description">A promotional visual campaign for Mikado abayas brand, featuring professional photography and direction that highlights the elegance of the designs.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 4 -->
+              <article class="project-card reveal" data-category="content">
+                <div class="project-card__image-wrapper">
+                  <img src="../assets/images/911Studio.jpg" alt="911 Studio Campaign" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>View Project</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">Studio 911 — Promotional Ad</h3>
+                    <p class="project-card__description">Marketing content production for Studio 911, a creative space for photographers and content creators, targeting a professional audience.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 5 -->
+              <article class="project-card reveal" data-category="content">
+                <div class="project-card__image-wrapper">
+                  <img src="../assets/images/yotamo-kitchen.jpg" alt="Yotamo Kitchen Vlog" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>View Project</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">Yotamo Kitchen — Lifestyle Vlog</h3>
+                    <p class="project-card__description">A daily lifestyle vlog in the "Yotamo Kitchen" series, capturing a fun cooking day in an authentic, entertaining format.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 6 -->
+              <article class="project-card reveal" data-category="interior">
+                <div class="project-card__image-wrapper">
+                  <img src="../assets/images/mojasem.jpg" alt="Architectural Scale Model" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>View Project</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">Scale Model — Academic Project</h3>
+                    <p class="project-card__description">Full documentation of an architectural scale model built from scratch to final submission, following all standard methods in interior design engineering.</p>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+            <div class="projects__dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <div class="skills__container container">
+          <div class="section__header reveal">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">Skills</h2>
+            <p class="section__description">
+              The tools and technologies I use in interior design and content creation.
+            </p>
+          </div>
+          <div class="skills__layout reveal">
+            <div class="skills__group">
+              <h3 class="skills__group-title">Interior Design</h3>
+              <div class="skills__badges">
+                <div class="skill-badge"><i class="bx bx-pen"></i><span>AutoCAD</span></div>
+                <div class="skill-badge"><i class="bx bx-cube"></i><span>SketchUp</span></div>
+                <div class="skill-badge"><i class="bx bx-cube-alt"></i><span>3ds Max</span></div>
+                <div class="skill-badge"><i class="bx bx-sun"></i><span>V-Ray</span></div>
+                <div class="skill-badge"><i class="bx bx-buildings"></i><span>Revit</span></div>
+                <div class="skill-badge"><i class="bx bx-paint-roll"></i><span>Interior Styling</span></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__group-title">Content Creation</h3>
+              <div class="skills__badges">
+                <div class="skill-badge"><i class="bx bx-film"></i><span>Premiere Pro</span></div>
+                <div class="skill-badge"><i class="bx bx-image"></i><span>Photoshop</span></div>
+                <div class="skill-badge"><i class="bx bx-slideshow"></i><span>After Effects</span></div>
+                <div class="skill-badge"><i class="bx bx-palette"></i><span>Illustrator</span></div>
+                <div class="skill-badge"><i class="bx bx-vector"></i><span>Figma</span></div>
+                <div class="skill-badge"><i class="bx bx-edit"></i><span>Copywriting</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <div class="section__header reveal">
+            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Let's Work Together</h2>
+            <p class="section__description">
+              Have a project or collaboration idea? Send me your proposal and I'll get back to you soon.
+            </p>
+          </div>
+          <div class="contact__content">
+            <div class="contact__info reveal">
+              <div class="contact__info-card">
+                <i class="bx bx-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>aya@example.com</p>
+                </div>
+                <button class="copy-btn" data-copy="aya@example.com" aria-label="Copy Email">
+                  <i class="bx bx-copy"></i>
+                </button>
+              </div>
+              <div class="contact__info-card">
+                <i class="bx bx-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p class="num-font">+218 XX XXX XXXX</p>
+                </div>
+                <button class="copy-btn" data-copy="+218XXXXXXXX" aria-label="Copy Phone Number">
+                  <i class="bx bx-copy"></i>
+                </button>
+              </div>
+              <div class="contact__info-card">
+                <i class="bx bx-map"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Libya</p>
+                </div>
+              </div>
+            </div>
+            <form class="contact__form reveal reveal-delay-1" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-user"></i><input type="text" id="contactName" name="name" class="form-input" placeholder="Enter your full name" required />
+                </div>
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-envelope"></i><input type="email" id="contactEmail" name="email" class="form-input" placeholder="example@email.com" required />
+                </div>
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">Phone Number</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-phone"></i><input type="tel" id="contactPhone" name="phone" class="form-input num-font" placeholder="+218 XX XXX XXXX" dir="ltr" />
+                </div>
+                <span class="form-error" id="phoneError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactCompany" class="form-label">Company / Brand Name</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-buildings"></i><input type="text" id="contactCompany" name="company" class="form-input" placeholder="Your company or brand name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactService" class="form-label">Service Type</label>
+                <div class="form-input-wrapper form-input-wrapper--select">
+                  <i class="bx bx-category"></i>
+                  <select id="contactService" name="serviceType" class="form-input" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="interior-design">Interior Design</option>
+                    <option value="content-creation">Content Creation</option>
+                    <option value="product-review">Product Review</option>
+                    <option value="social-campaign">Social Media Campaign</option>
+                    <option value="brand-collab">Brand Collaboration</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Project Details</label>
+                <div class="form-input-wrapper form-input-wrapper--textarea">
+                  <i class="bx bx-message-dots"></i><textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="Describe your project or collaboration proposal... (budget, timeline, requirements)" rows="5" required></textarea>
+                </div>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <i class="bx bx-send" id="sendIcon"></i><i class="bx bx-loader-alt bx-spin" id="spinnerIcon" style="display:none"></i><span>Send Proposal</span>
+              </button>
+              <div class="form-success" id="formSuccess">
+                <i class="bx bx-check-circle"></i><span>Your proposal has been sent successfully! I'll get back to you soon ✨</span>
+              </div>
+              <div class="form-error-global" id="formError">
+                <i class="bx bx-error-circle"></i><span>An error occurred while sending. Please try again or contact me directly.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__socials">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copyright">
+            &copy; <span class="footer__brand">Aya Aoun</span> . All Rights Reserved
+          </p>
+          <p class="footer__legal">Designed &amp; developed by <a href="https://yosef.ly" target="_blank" rel="noopener noreferrer">Ben Zahia Holdings</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </button>
+    <script src="../script.js"></script>
+  </body>
+</html>

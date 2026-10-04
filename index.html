@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آية عون — مهندسة داخلية | صانعة محتوى</title>
+    <meta name="description" content="آية عون — مهندسة داخلية وصانعة محتوى. تصميم مساحات إبداعية وإنشاء محتوى مرئي احترافي." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yotamo.example.com/" />
+    <meta property="og:title" content="آية عون — مهندسة داخلية | صانعة محتوى" />
+    <meta property="og:description" content="آية عون — مهندسة داخلية وصانعة محتوى. تصميم مساحات إبداعية وإنشاء محتوى مرئي احترافي." />
+    <meta property="og:image" content="https://yotamo.example.com/assets/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="آية عون — مهندسة داخلية | صانعة محتوى" />
+    <meta name="twitter:description" content="آية عون — مهندسة داخلية وصانعة محتوى. تصميم مساحات إبداعية وإنشاء محتوى مرئي احترافي." />
+    <meta name="twitter:image" content="https://yotamo.example.com/assets/og-image.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yotamo.example.com/" />
+
+    <!-- Keywords -->
+    <meta name="keywords" content="آية عون, مهندسة داخلية, صانعة محتوى, تصميم داخلي, interior design, content creator, ديكور" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "آية عون",
+        "url": "https://yotamo.example.com",
+        "jobTitle": "مهندسة داخلية | صانعة محتوى",
+        "description": "مهندسة داخلية وصانعة محتوى. تصميم مساحات إبداعية وإنشاء محتوى مرئي احترافي.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "LY"
+        },
+        "email": "aya@example.com",
+        "sameAs": []
+      }
+    </script>
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#ec4899" />
+
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="assets/images/yotamo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="navbar__container container">
+        <a href="#home" class="navbar__logo" dir="ltr">
+          <span class="logo-bracket">&lt;/</span>Aya<span class="logo-dot">.</span>Aoun<span class="logo-bracket">&gt;</span>
+        </a>
+        <nav class="navbar__menu" id="navMenu">
+          <ul class="navbar__list">
+            <li>
+              <a href="#home" class="navbar__link active-link" data-section="home"
+                ><i class="bx bx-home-alt"></i><span>الرئيسية</span></a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navbar__link" data-section="projects"
+                ><i class="bx bx-briefcase"></i><span>أعمالي</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="navbar__link" data-section="skills"
+                ><i class="bx bx-palette"></i><span>مهاراتي</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navbar__link" data-section="contact"
+                ><i class="bx bx-envelope"></i><span>تواصل</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar__actions">
+          <a href="en/index.html" class="lang-toggle" aria-label="Switch to English">EN</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">
+            <i class="bx bx-moon" id="themeIcon"></i>
+          </button>
+          <button class="navbar__toggle" id="navToggle" aria-label="القائمة">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section" id="home">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <div class="hero__image-wrapper reveal">
+              <div class="hero__image-ring"></div>
+                <img
+                  src="assets/images/yotamo.jpg"
+                  alt="صورة آية عون"
+                  class="hero__image"
+                  loading="lazy"
+                  decoding="async"
+                  width="266"
+                  height="400"
+                />
+            </div>
+            <div class="hero__text reveal reveal-delay-1">
+              <span class="hero__greeting">مرحباً، أنا</span>
+              <h1 class="hero__name">آيـة عـون<i class="bx bxs-badge-check verified-badge"></i></h1>
+              <p class="hero__title">
+                <span class="hero__title-wrapper"
+                  ><span class="hero__title-text" id="typingText"></span
+                  ><span class="hero__cursor">|</span></span
+                >
+              </p>
+            </div>
+            <div class="hero__socials reveal reveal-delay-2">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"
+                ><i class="bx bxl-tiktok"></i
+              ></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats section" id="stats">
+        <div class="stats__container container">
+
+          <div class="stats__metric reveal">
+            <div class="stats__figure">
+              <span class="stats__plus num-font">+</span>
+              <h3 class="stats__number num-font" data-target="30">0</h3>
+            </div>
+            <div class="stats__meta">
+              <span class="stats__label">شراكة تجارية</span>
+              <span class="stats__sub">تعاون ناجح مع علامات تجارية</span>
+            </div>
+          </div>
+
+          <div class="stats__metric reveal reveal-delay-1">
+            <div class="stats__figure">
+              <span class="stats__plus num-font">+</span>
+              <h3 class="stats__number num-font" data-target="4">0</h3>
+            </div>
+            <div class="stats__meta">
+              <span class="stats__label">سنوات خبرة</span>
+              <span class="stats__sub">في التصميم الداخلي وصناعة المحتوى</span>
+            </div>
+          </div>
+
+          <div class="stats__metric reveal reveal-delay-2">
+            <div class="stats__figure">
+              <span class="stats__plus num-font">+</span>
+              <h3 class="stats__number num-font" data-target="120">0</h3>
+            </div>
+            <div class="stats__meta">
+              <span class="stats__label">ألف متابع</span>
+              <span class="stats__sub">على منصات التواصل الاجتماعي</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ACTIONS -->
+      <section class="actions section">
+        <div class="actions__container container reveal">
+          <a href="assets/cv.pdf" download class="btn btn--primary"
+            ><i class="bx bx-cloud-download"></i>تحميل السيرة الذاتية</a
+          >
+          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--whatsapp"
+            ><i class="bx bxl-whatsapp"></i>واتساب</a
+          >
+          <a href="mailto:aya@example.com" class="btn btn--secondary btn--email"
+            ><i class="bx bx-envelope"></i>البريد الإلكتروني</a
+          >
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section" id="projects">
+        <div class="projects__container container">
+          <div class="section__header reveal">
+            <span class="section__subtitle">أعمالي</span>
+            <h2 class="section__title">معرض الأعمال</h2>
+            <p class="section__description">
+              مجموعة من أبرز مشاريعي في التصميم الداخلي وصناعة المحتوى الإبداعي.
+            </p>
+          </div>
+          <div class="projects__tabs reveal">
+            <button type="button" class="projects__tab active" data-filter="all">الكل</button>
+            <button type="button" class="projects__tab" data-filter="interior">تصميم داخلي</button>
+            <button type="button" class="projects__tab" data-filter="content">صناعة محتوى</button>
+          </div>
+          <div class="projects__carousel-wrapper">
+            <button class="projects__nav projects__nav--prev" aria-label="السابق"><i class="bx bx-chevron-left"></i></button>
+            <button class="projects__nav projects__nav--next" aria-label="التالي"><i class="bx bx-chevron-right"></i></button>
+            <div class="projects__grid">
+
+              <!-- Project 1 — المنزل الجديد -->
+              <article class="project-card reveal" data-category="interior">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/images/The%20new%20house.jpg" alt="تصميم المنزل الجديد" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>عرض المشروع</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">تصميم وتأثيث المنزل الجديد</h3>
+                    <p class="project-card__description">تصميم داخلي متكامل من الصفر — من اختيار الأرضيات وتشطيب المساحات، وصولاً إلى انتقاء الأثاث وضبط كل تفصيلة لخلق بيئة سكنية عصرية ودافئة.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 2 — كولاج التصميم الداخلي -->
+              <article class="project-card reveal" data-category="interior">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/images/interior%20design.jpg" alt="كولاج التصميم الداخلي" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>عرض المشروع</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">كولاج التصميم الداخلي — أكاديمي</h3>
+                    <p class="project-card__description">مشروع جامعي يعتمد تقنية الكولاج لدمج عناصر تصميمية داخلية متنوعة في تكوين بصري متناسق، يعكس الرؤية الإبداعية ومفهوم المساحة المتكاملة.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3 — ميكادو -->
+              <article class="project-card reveal" data-category="content">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/images/micado.jpg" alt="حملة ميكادو للعبايات" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>عرض المشروع</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">حملة Mikado — عبايات فاخرة</h3>
+                    <p class="project-card__description">إنتاج حملة ترويجية مرئية لبراند Mikado للعبايات، تضمنت تصوير وإخراج محتوى احترافي يُبرز أناقة التصاميم ويعزز الهوية البصرية للعلامة التجارية.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 4 — استوديو 911 -->
+              <article class="project-card reveal" data-category="content">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/images/911Studio.jpg" alt="استوديو 911" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>عرض المشروع</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">استوديو 911 — إعلان ترويجي</h3>
+                    <p class="project-card__description">إنتاج محتوى تسويقي لاستوديو 911 المخصص للمصورين وصناع المحتوى، سلّط الضوء على مزايا المساحة الإبداعية واستهدف الجمهور المتخصص بأسلوب بصري مؤثر.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 5 — يوتامو كيتشن -->
+              <article class="project-card reveal" data-category="content">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/images/yotamo-kitchen.jpg" alt="يوتامو كيتشن" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>عرض المشروع</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">يوتامو كيتشن — فلوق ترفيهي</h3>
+                    <p class="project-card__description">فلوق يومي ضمن فقرة "يوتامو كيتشن"، يرصد تجربة الطبخ بأسلوب ترفيهي تفاعلي ويكشف الجانب الإنساني الحقيقي لآية بعيداً عن الطابع الرسمي.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 6 — مجسمات ونماذج -->
+              <article class="project-card reveal" data-category="interior">
+                <div class="project-card__image-wrapper">
+                  <img src="assets/images/mojasem.jpg" alt="مجسم معماري" class="project-card__image" loading="lazy" decoding="async" width="800" height="450" />
+                </div>
+                <a href="#" class="project-card__btn"><i class="bx bx-link-external"></i>عرض المشروع</a>
+                <div class="project-card__overlay">
+                  <div class="project-card__content">
+                    <h3 class="project-card__title">مجسمات ونماذج — أكاديمي</h3>
+                    <p class="project-card__description">توثيق كامل لرحلة صناعة مجسم معماري من الصفر حتى التسليم، وفق الأساليب المعتمدة في هندسة التصميم الداخلي عبر جميع مراحل التصميم والتنفيذ.</p>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+            <div class="projects__dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <div class="skills__container container">
+          <div class="section__header reveal">
+            <span class="section__subtitle">قدراتي</span>
+            <h2 class="section__title">المهارات</h2>
+            <p class="section__description">
+              الأدوات والتقنيات التي أستخدمها في التصميم الداخلي وصناعة المحتوى.
+            </p>
+          </div>
+          <div class="skills__layout reveal">
+            <div class="skills__group">
+              <h3 class="skills__group-title">التصميم الداخلي</h3>
+              <div class="skills__badges">
+                <div class="skill-badge"><i class="bx bx-pen"></i><span>AutoCAD</span></div>
+                <div class="skill-badge"><i class="bx bx-cube"></i><span>SketchUp</span></div>
+                <div class="skill-badge"><i class="bx bx-cube-alt"></i><span>3ds Max</span></div>
+                <div class="skill-badge"><i class="bx bx-sun"></i><span>V-Ray</span></div>
+                <div class="skill-badge"><i class="bx bx-buildings"></i><span>Revit</span></div>
+                <div class="skill-badge"><i class="bx bx-paint-roll"></i><span>التصميم الداخلي</span></div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__group-title">صناعة المحتوى</h3>
+              <div class="skills__badges">
+                <div class="skill-badge"><i class="bx bx-film"></i><span>Premiere Pro</span></div>
+                <div class="skill-badge"><i class="bx bx-image"></i><span>Photoshop</span></div>
+                <div class="skill-badge"><i class="bx bx-slideshow"></i><span>After Effects</span></div>
+                <div class="skill-badge"><i class="bx bx-palette"></i><span>Illustrator</span></div>
+                <div class="skill-badge"><i class="bx bx-vector"></i><span>Figma</span></div>
+                <div class="skill-badge"><i class="bx bx-edit"></i><span>كتابة المحتوى</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <div class="section__header reveal">
+            <span class="section__subtitle">تواصل معي</span>
+            <h2 class="section__title">لنعمل معاً</h2>
+            <p class="section__description">
+              هل لديك مشروع أو فكرة تعاون؟ أرسل لي عرضك وسأتواصل معك في أقرب وقت.
+            </p>
+          </div>
+          <div class="contact__content">
+            <div class="contact__info reveal">
+              <div class="contact__info-card">
+                <i class="bx bx-envelope"></i>
+                <div>
+                  <h4>البريد الإلكتروني</h4>
+                  <p>aya@example.com</p>
+                </div>
+                <button class="copy-btn" data-copy="aya@example.com" aria-label="نسخ البريد">
+                  <i class="bx bx-copy"></i>
+                </button>
+              </div>
+              <div class="contact__info-card">
+                <i class="bx bx-phone"></i>
+                <div>
+                  <h4>الهاتف</h4>
+                  <p class="num-font">+218 XX XXX XXXX</p>
+                </div>
+                <button class="copy-btn" data-copy="+218XXXXXXXX" aria-label="نسخ رقم الهاتف">
+                  <i class="bx bx-copy"></i>
+                </button>
+              </div>
+              <div class="contact__info-card">
+                <i class="bx bx-map"></i>
+                <div>
+                  <h4>الموقع</h4>
+                  <p>ليبيا</p>
+                </div>
+              </div>
+            </div>
+            <form class="contact__form reveal reveal-delay-1" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">الاسم الكامل</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-user"></i
+                  ><input type="text" id="contactName" name="name" class="form-input" placeholder="أدخل اسمك الكامل" required />
+                </div>
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">البريد الإلكتروني</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-envelope"></i
+                  ><input type="email" id="contactEmail" name="email" class="form-input" placeholder="example@email.com" required />
+                </div>
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">رقم الهاتف</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-phone"></i
+                  ><input type="tel" id="contactPhone" name="phone" class="form-input num-font" placeholder="+218 XX XXX XXXX" dir="ltr" />
+                </div>
+                <span class="form-error" id="phoneError"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactCompany" class="form-label">اسم الشركة / العلامة التجارية</label>
+                <div class="form-input-wrapper">
+                  <i class="bx bx-buildings"></i
+                  ><input type="text" id="contactCompany" name="company" class="form-input" placeholder="اسم شركتك أو علامتك التجارية" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactService" class="form-label">نوع الخدمة المطلوبة</label>
+                <div class="form-input-wrapper form-input-wrapper--select">
+                  <i class="bx bx-category"></i>
+                  <select id="contactService" name="serviceType" class="form-input" required>
+                    <option value="" disabled selected>اختر نوع الخدمة</option>
+                    <option value="interior-design">تصميم داخلي</option>
+                    <option value="content-creation">صناعة محتوى</option>
+                    <option value="product-review">مراجعة منتجات</option>
+                    <option value="social-campaign">حملة تسويقية</option>
+                    <option value="brand-collab">شراكة تجارية</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">تفاصيل المشروع</label>
+                <div class="form-input-wrapper form-input-wrapper--textarea">
+                  <i class="bx bx-message-dots"></i
+                  ><textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="اكتب تفاصيل مشروعك أو عرض التعاون هنا... (الميزانية، الجدول الزمني، المتطلبات)" rows="5" required></textarea>
+                </div>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <i class="bx bx-send" id="sendIcon"></i><i class="bx bx-loader-alt bx-spin" id="spinnerIcon" style="display:none"></i><span>إرسال العرض</span>
+              </button>
+              <div class="form-success" id="formSuccess">
+                <i class="bx bx-check-circle"></i
+                ><span>تم إرسال عرضك بنجاح! سأتواصل معك قريباً ✨</span>
+              </div>
+              <div class="form-error-global" id="formError">
+                <i class="bx bx-error-circle"></i
+                ><span>حدث خطأ أثناء الإرسال. حاول مرة أخرى أو راسلني مباشرة.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__socials">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"
+            ><i class="bx bxl-tiktok"></i
+          ></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copyright">
+            &copy; <span class="footer__brand">آية عون</span> . جميع الحقوق محفوظة
+          </p>
+          <p class="footer__legal">تصميم وتطوير: <a href="https://yosef.ly" target="_blank" rel="noopener noreferrer">بـن زاهيـة القابضـة</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">
+      <i class="bx bx-up-arrow-alt"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
