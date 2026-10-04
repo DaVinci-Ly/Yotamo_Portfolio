@@ -1,4 +1,4 @@
-# Yotamo — آية عون | Aya Aoun
+# Yotamo — آية عون | Aya Oun
 
 > **مهندسة داخلية | صانعة محتوى**
 > Interior Designer | Content Creator
